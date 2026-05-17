@@ -1,0 +1,14 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+
+names: ['plastic_bottle']
+
+roboflow:
+  workspace: object-detection-t7bhu
+  project: object-detection-soaqo
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/object-detection-t7bhu/object-detection-soaqo/dataset/1

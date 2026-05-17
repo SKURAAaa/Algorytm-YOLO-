@@ -1,0 +1,9 @@
+Projekt polegał na implementacji systemu detekcji obiektów z wykorzystaniem algorytmu YOLOv8 w języku Python.
+
+Do realizacji projektu wykorzystano bibliotekę ultralytics oraz OpenCV. Przygotowano własny dataset przedstawiający plastikowe butelki. Dane zostały oznaczone przy użyciu platformy Roboflow oraz wyeksportowane w formacie YOLOv8.
+
+Dataset zawierał około 200 obrazów treningowych z różnymi położeniami, skalą oraz warunkami oświetlenia obiektów. Następnie przeprowadzono proces fine-tuningu modelu YOLOv8n przez 20 epok treningowych.
+
+Po zakończeniu treningu model został zapisany jako best.pt i wykorzystany do detekcji obiektów na obrazach oraz obrazie z kamery. Model poprawnie wykrywał plastikowe butelki, wyświetlał bounding boxy, nazwę klasy oraz confidence score.
+
+Porównanie modelu bazowego i dotrenowanego wykazało poprawę skuteczności wykrywania obiektów specyficznych dla przygotowanego datasetu.
